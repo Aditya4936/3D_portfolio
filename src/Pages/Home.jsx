@@ -3,12 +3,13 @@ import * as React from "react";
 import { Suspense, useState, useRef,useEffect } from "react";
 import Loader from "../components/Loader";
 import Island from "../models/Island";
-import Sky from "../models/sky";
+// import sky from "../models/sky";
 import Bird from "../models/Bird";
 import Plane from "../models/Plane";
 import Homeinfo from "../components/Homeinfo";
 import sakura from "../assets/sakura.mp3";
 import { soundoff, soundon } from "../assets/icons";
+import Sky from "../models/Sky";
 
 const Home = () => {
   const audioRef = useRef(new Audio(sakura));
@@ -81,7 +82,8 @@ const Home = () => {
             intensity={1}
           />
           <Bird />
-          <Sky isrotating={isrotating} />
+          {/* <sj isrotating={isrotating} /> */}
+          <Sky isrotating={isrotating}/>
           <Island
             position={islandPosition}
             scale={islandScale}
