@@ -30,7 +30,7 @@ const Contact = () => {
           to_email: "6984akv@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        import.meta.vE3sHetdu3_7VyVfz
       )
       .then(() => {
         setIsLoading(false);
