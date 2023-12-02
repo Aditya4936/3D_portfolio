@@ -59,7 +59,7 @@ const Contact = () => {
         <form
           className="w-full flex flex-col gap-7 mt-14"
           onSubmit={handleSubmit}
-          action="https://getform.io/f/3396471b-3f72-4b75-b41a-cf2cecf1bf98"
+          action="https://getform.io/f/93fba5ad-5247-45e9-a1cf-1fe2e3d845bc"
         >
           <label className="text-black-500 font-semibold">
             Name
