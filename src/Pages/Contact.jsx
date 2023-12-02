@@ -30,7 +30,7 @@ const Contact = () => {
           to_email: "6984akv@gmail.com",
           message: form.message,
         },
-        import.meta.vE3sHetdu3_7VyVfz
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(() => {
         setIsLoading(false);
@@ -59,6 +59,7 @@ const Contact = () => {
         <form
           className="w-full flex flex-col gap-7 mt-14"
           onSubmit={handleSubmit}
+          action="https://getform.io/f/3396471b-3f72-4b75-b41a-cf2cecf1bf98"
         >
           <label className="text-black-500 font-semibold">
             Name
