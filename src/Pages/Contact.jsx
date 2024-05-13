@@ -21,8 +21,11 @@ const Contact = () => {
     setCurrentAnimation("hit");
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        // import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        // import.meta.template_1f4p2qr,
+        "service_vhcpaqv",
+        "template_1f4p2qr",
+
         {
           from_name: form.name,
           to_name: "Aditya Patel",
@@ -30,7 +33,8 @@ const Contact = () => {
           to_email: "6984akv@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        // import.meta.vE3sHetdu3_7VyVfz
+        "vE3sHetdu3_7VyVfz"
       )
       .then(() => {
         setIsLoading(false);
